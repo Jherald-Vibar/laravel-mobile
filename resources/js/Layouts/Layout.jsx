@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { router } from '@inertiajs/react'
+import Logo from '../../assets/logo.png'
 
 export default function Layout({ children }) {
   const [loading, setLoading] = useState(false)
@@ -45,10 +46,7 @@ export default function Layout({ children }) {
         <div className="fixed inset-0 z-50 flex flex-col items-center justify-center"
           style={{ background: 'linear-gradient(175deg, #a8c8f0 0%, #c5dff8 35%, #deeeff 65%, #f0f8ff 100%)' }}
         >
-          <div
-            className="w-16 h-16 rounded-full mb-8 animate-pulse"
-            style={{ background: 'linear-gradient(145deg, #7b96e8 0%, #5b6fd4 40%, #4a5bbf 100%)' }}
-          />
+         <img src={Logo} className='w-10 mb-3' alt="" />
           <div className="w-48 h-1.5 bg-blue-200 rounded-full overflow-hidden">
             <div
               className="h-full bg-blue-500 rounded-full transition-all duration-200 ease-out"
